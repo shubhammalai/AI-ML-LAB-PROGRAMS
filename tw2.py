@@ -71,7 +71,7 @@ class Graph:
                     solved=solved & False
             if solved==True: 
                 self.setStatus(v,-1)
-                self.solutionGraph[v]=childNodeList n
+                self.solutionGraph[v]=childNodeList
             if v!=self.start: 
                 self.aoStar(self.parent[v], True) 
             if backTracking==False: 
